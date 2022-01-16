@@ -1,4 +1,4 @@
-import { Meta, Story } from "@storybook/react";
+import { ComponentMeta, ComponentStory, Story } from "@storybook/react";
 import React from "react";
 
 import { Button, PropsButton } from "./button";
@@ -6,20 +6,20 @@ import { Button, PropsButton } from "./button";
 export default {
   title: "Button",
   components: Button
-} as Meta;
+} as ComponentMeta<typeof Button>;
 
-const Template: Story<PropsButton> = (arg: Partial<PropsButton>) => <Button {...arg} />;
+const Template: ComponentStory<typeof Button> = args => <Button {...args} />;
 
 export const Blue = Template.bind({});
 
 Blue.args = {
-  children: "Click me",
-  theme: "blue"
+  theme: "blue",
+  children: "Click me"
 };
 
 export const Transparent = Template.bind({});
 
 Transparent.args = {
-  children: "Click me",
-  theme: "transparent"
+  theme: "transparent",
+  children: "Click me"
 };
