@@ -27,7 +27,8 @@
     "eslint": "eslint --quiet --ext .tsx,.ts src/",
     "eslint:fix": "eslint --quiet --ext .tsx,.ts --fix src/",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prepare": "relative-deps"
   },
   "eslintConfig": {
     "extends": [
@@ -80,6 +81,10 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-storybook": "^0.5.5",
     "prettier": "^1.19.1",
+    "relative-deps": "^1.0.7",
     "webpack": "^5.65.0"
+  },
+  "relativeDependencies": {
+    "@react-theming/storybook-addon": "../storybook-addon"
   }
 }

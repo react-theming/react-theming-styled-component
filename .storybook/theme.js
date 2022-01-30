@@ -1,72 +1,55 @@
-const colors = {
-  white: '#ffffff',
-  whiteTransparent: 'rgba(255, 255, 255, 0.5)',
-  blackTransparent: '#e8eae8',
-  accent1: '#d2093b',
-  accent2: '#252525',
-  accent3: '#c2c8cb',
-  accent4: '#044e7c',
-  accent5: '#ac924d',
-  accent6: '#e0a8b4',
-  accent7: '#425550',
-  accent8: '#8b8b6b',
-  accent9: '#9c0935',
-};
-
-const media = {
-  md: '@media (max-width: 767px)',
-  sm: '@media (max-width: 499px)',
-};
-
-export const theme = {
-  name: 'Light theme 1',
+export const freeTheme = {
+  name: "Free Theme",
   palette: {
-    colors,
-  },
-  media,
-};
-
-export const themeAlt = {
-  ...theme,
-  name: 'Light theme 2',
-  palette: {
-    colors: {
-      white: '#ffffff',
-      whiteTransparent: 'rgba(255, 255, 255, 0.5)',
-      blackTransparent: '#fcfcfc',
-      accent1: '#3bd9d6',
-      accent2: '#0a8997',
-      accent3: '#292b2c',
-      accent4: '#7c0435',
-      accent5: '#ac924d',
-      accent6: '#e0a8b4',
-      accent7: '#6cb09e',
-      accent8: '#8b8b6b',
-      accent9: '#1f595f',
-      textRed: 'orange',
+    primary: {
+      light: "#2e7575",
+      main: "#0f970a",
+      dark: "#2c292c",
+      contrastText: "#6e3131"
     },
+    secondary: {
+      light: "#4a8085",
+      main: "#8a8a3d",
+      dark: "#5b2222",
+      contrastText: "#705252"
+    }
   },
+  colors: {
+    white: "#6e4caf",
+    accent1: "#243abd",
+    accent2: "rgba(145,44,44,0.5)"
+  },
+  fontSizes: {
+    small: "1em",
+    medium: "2em",
+    large: "3em"
+  }
 };
 
-export const darkTheme = {
-  ...theme,
-  name: 'Dark theme',
+export const oneTheme = {
+  name: "One Theme",
   palette: {
-    colors: {
-      white: '#d7d4d4',
-      whiteTransparent: 'rgba(255, 255, 255, 0.5)',
-      blackTransparent: '#707270',
-      accent1: '#46496c',
-      accent2: '#c7c7cb',
-      accent3: '#c2c8cb',
-      accent4: '#044e7c',
-      accent5: '#ac924d',
-      accent6: '#e0a8b4',
-      accent7: '#425550',
-      accent8: '#8b8b6b',
-      accent9: '#9c0935',
-      bgGrey: '#888888',
-      textRed: '#Fd1500',
+    primary: {
+      light: "#3bd9d6",
+      main: "#0a8997",
+      dark: "#292b2c",
+      contrastText: "#fff"
     },
+    secondary: {
+      light: "#0d191a",
+      main: "#cbcb35",
+      dark: "#882323",
+      contrastText: "#fff"
+    }
   },
+  colors: {
+    white: "#4b00dc",
+    accent1: "#3bd9d6",
+    accent2: "#0a8997"
+  },
+  fontSizes: {
+    small: "1em",
+    medium: "2em",
+    large: "3em"
+  }
 };

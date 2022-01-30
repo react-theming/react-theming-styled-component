@@ -1,13 +1,11 @@
-import styled, { css } from "styled-components";
-
-const themeButton = (options: { border: string; background: string }) => css`
-  border: ${options.border};
-  background: ${options.background};
-`;
+import styled from "styled-components";
 
 export const StyledButtonWrapper = styled.button`
   padding: 16px 22px;
   cursor: pointer;
-
-  ${({ theme }) => theme && themeButton({ border: theme, background: theme })}
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.accent2};
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  color: ${({ theme }) => theme.colors.accent1};
+  border-radius: 10px;
 `;

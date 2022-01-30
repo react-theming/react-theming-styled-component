@@ -5,13 +5,10 @@ import { StyledMainWrapper } from "./main.styled";
 
 export const Main: FC = () => {
   return (
-    <StyledMainWrapper>
-      <Container>
-        <div>ПРивет</div>
-        <Button theme="white" onClick={() => console.log("click")}>
-          Кнопка
-        </Button>
-      </Container>
-    </StyledMainWrapper>
+    <Container>
+      <StyledMainWrapper>
+        <Button onClick={() => console.log("click")}>Кнопка</Button>
+      </StyledMainWrapper>
+    </Container>
   );
 };
