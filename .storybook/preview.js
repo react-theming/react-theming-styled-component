@@ -50,13 +50,13 @@ const withThemeProvider = (Story, context) => {
   );
 };
 
-const decorators = [
-  Story => (
-    <ThemeProvider theme={darkTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-];
+// const decorators = [
+//   Story => (
+//     <ThemeProvider theme={darkTheme}>
+//       <Story />
+//     </ThemeProvider>
+//   )
+// ];
 
 // const decorators = [withThemes(ThemeProvider, [freeTheme, oneTheme])];
 
